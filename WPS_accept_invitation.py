@@ -1,4 +1,4 @@
-invite_userids = [244668941]
+invite_userids = [428471168]
 
 import json, os, time
 import requests
@@ -20,7 +20,7 @@ sids = [
 ]
 mk = 0
 
-def request_re(sid, invite_userid, rep = 30):
+def request_re(sid, invite_userid, rep = 50):
     invite_url = 'http://zt.wps.cn/2018/clock_in/api/invite'
     r = requests.post(invite_url, headers={'sid': sid}, data={'invite_userid': invite_userid})
     js = json.loads(r.content)
